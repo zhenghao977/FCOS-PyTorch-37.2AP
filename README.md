@@ -82,3 +82,5 @@ You can run the train_voc.py, train 30 epoch and you can get the result. You nee
 You can run the detect.py to detect images , this repo provides PASCAL VOC Images detection demo.
 ![test1](assets/000004.jpg)  
 ![test1](assets/000352.jpg)  
+
+thanks to [@VectXmy]（https://github.com/VectXmy）, I referenced some codes.
