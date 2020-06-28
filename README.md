@@ -83,4 +83,4 @@ You can run the detect.py to detect images , this repo provides PASCAL VOC Image
 ![test1](assets/000004.jpg)  
 ![test1](assets/000352.jpg)  
 
-thanks to [@VectXmy]（https://github.com/VectXmy）, I referenced some codes.
+thanks to [@VectXmy](https://github.com/VectXmy), I referenced some codes.
