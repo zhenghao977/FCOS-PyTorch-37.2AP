@@ -36,7 +36,7 @@ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.372
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.597
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.687
 ```
-there are some details you neet to notice:
+### there are some details you neet to notice:
 as for the data-augument, I only use flip, color jitter and rotate ,the random crop I also use for my training, but the ap is lower.
 so I suggest you turn off the random crop.
 
