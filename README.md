@@ -36,7 +36,7 @@ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.372
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.597
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.687
 ```
-####there are some details you neet to notice:
+there are some details you neet to notice:
 as for the data-augument, I only use flip, color jitter and rotate ,the random crop I also use for my training, but the ap is lower.
 so I suggest you turn off the random crop.
 
@@ -73,6 +73,11 @@ ap for tvmonitor is 0.8186715890179656
 mAP=====>0.787
 ```
 I also use the cosine lr to train the voc, and it got 76.7mAP, which is lower than linear. I think the cosine lr matches Adam is better.
+### train for coco
+You can run the train_coco.py, train 24 epoch and you can get the result. You need to change the coco2017 path.
+### train for PASCAL VOC
+You can run the train_voc.py, train 30 epoch and you can get the result. You need to change the PASCAL07+12 path, you can reference to this repo:https://github.com/YuwenXiong/py-R-FCN
+
 ### Detect Image   
 You can run the detect.py to detect images , this repo provides PASCAL VOC Images detection demo.
 ![test1](assets/000004.jpg)  
