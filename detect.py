@@ -75,7 +75,7 @@ if __name__=="__main__":
         limit_range=[[-1,64],[64,128],[128,256],[256,512],[512,999999]]
 
         #inference
-        score_threshold=0.2
+        score_threshold=0.3
         nms_iou_threshold=0.4
         max_detection_boxes_num=300
 
@@ -120,7 +120,7 @@ if __name__=="__main__":
             pt1=(int(box[0]),int(box[1]))
             pt2=(int(box[2]),int(box[3]))
             img_pad=cv2.rectangle(img_pad,pt1,pt2,(0,255,0))
-            b_color = colors[int(classes[i])]
+            b_color = colors[int(classes[i]) - 1]
             bbox = patches.Rectangle((box[0],box[1]),width=box[2]-box[0],height=box[3]-box[1],linewidth=1,facecolor='none',edgecolor=b_color)
             ax.add_patch(bbox)
             plt.text(box[0], box[1], s="%s %.3f"%(VOCDataset.CLASSES_NAME[int(classes[i])],scores[i]), color='white',
