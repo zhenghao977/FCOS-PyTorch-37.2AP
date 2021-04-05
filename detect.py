@@ -64,7 +64,7 @@ if __name__=="__main__":
         use_p5=True
         
         #head
-        class_num=80
+        class_num=20
         use_GN_head=True
         prior=0.01
         add_centerness=True
